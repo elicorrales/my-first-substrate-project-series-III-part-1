@@ -41,6 +41,7 @@ sudo apt install -y cmake
 Again re-ran the above ```cargo build .. blah blah```  
 
 #### Next Error:  
+  
 ```
 error: failed to run custom build command for `librocksdb-sys v0.6.1+6.28.2`
 
@@ -60,6 +61,7 @@ sudo apt install clang
 ```
    
 #### The Next Error:  
+  
 ```
 error: failed to run custom build command for `node-template-runtime v4.0.0-dev (/home/IamDeveloper/MySoftwareProjects/blockchain/rust/rust-substrate-blockchain-projects/substrate-node-template/runtime)`
 
@@ -75,7 +77,8 @@ I did NOT want set my rust environment as ```nightly```, so instead, I did:
 cargo +nightly build --package node-template --release
 ```
   
-But then another error:  
+#### But then another error:  
+  
 ```
 $ cargo +nightly build --package node-template --release
 error: toolchain 'nightly-x86_64-unknown-linux-gnu' is not installed
@@ -94,7 +97,8 @@ And try to build again:
 cargo +nightly build --package node-template --release
 ```
   
-The Next Error:  
+#### The Next Error:  
+  
 ```
 Caused by:
   process didn't exit successfully: `/home/IamDeveloper/MySoftwareProjects/blockchain/rust/rust-substrate-blockchain-projects/substrate-node-template/target/release/build/node-template-runtime-6c171c388ccdfbca/build-script-build` (exit status: 1)
@@ -129,7 +133,8 @@ Instead, we can do this:
 cargo  build --package node-template --release
 ```
   
-If you got this far, try firing up your new substate node.  
+#### If you got this far, try firing up your new substate node.  
+  
 Enter the path to get to: ```./target/release/node-template``` and do:  
 ```
 ./target/release/node-template --help
