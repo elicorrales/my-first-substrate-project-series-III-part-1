@@ -168,6 +168,10 @@ $ ./target/release/node-template --dev
 ```
 
 The above will just keep on going.  We are now ready to try to connect to it via a simple Node.js Javascript client.  
+  
+#### We are ready to use our Javascript client (see this project's file(s)).  
+  
+We need a Javascript library to make our lives easier, so we search for ```@polkadot```.  
 
 ```
 npm search @polkadot
@@ -196,7 +200,15 @@ time                      |                      |                 |            
 @polkadot/api-provider    | Transport providers… | =polkadotjs…    | 2018-10-10 | 0.30.45  | Polkadot JsonRPC
 @polkadot/types           | Implementation of…   | =polkadotjs…    | 2022-07-23 | 8.14.1   |
 ```
-
+  
+In the above table, it is the ```@polkadot/api```.  
+  
+I installed it globally.  
 ```
 npm install -g @polkadot/api
 ```
+  
+That is why if you look at this project's directory structure, you'll see a link to ```node_modules```.  
+  
+Finally, run the client with ```node client.js```.  
+  
