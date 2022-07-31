@@ -59,7 +59,7 @@ $ clang
 
 Command 'clang' not found, but can be installed with:
 
-sudo apt install clang
+sudo apt install -y clang
 ```
    
 #### The Next Error:  
