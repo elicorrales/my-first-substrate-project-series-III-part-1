@@ -1,6 +1,8 @@
 # my-first-substrate-project-series-III-part-1  
   
-## Install Rust-based Implementation of A Substrate Node For Local Development  
+## The Local Node  
+  
+### Install Rust-based Implementation of A Substrate Node For Local Development  
   
 ### NOTE: Review all this prior to doing any of it, to save yourself some time.  
 ```  
@@ -169,6 +171,7 @@ $ ./target/release/node-template --dev
 
 The above will just keep on going.  We are now ready to try to connect to it via a simple Node.js Javascript client.  
   
+# The Client  
 #### We are ready to use our Javascript client (see this project's file(s)).  
   
 We need a Javascript library to make our lives easier, so we search for ```@polkadot```.  
